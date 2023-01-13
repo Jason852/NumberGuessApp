@@ -1,4 +1,4 @@
-import { StyleSheet, View, TextInput } from "react-native";
+import { StyleSheet, View, TextInput, Text } from "react-native";
 import React from "react";
 import PrimaryButton from "../components/PrimaryButton";
 export default function StartGameScreen() {
@@ -8,6 +8,7 @@ export default function StartGameScreen() {
         style={styles.numberInput}
         maxLength={2}
         keyboardType="number-pad"
+        keyboardAppearance="light"
         autoCapitalize="none"
         autoCorrect={false}
       />
@@ -22,7 +23,7 @@ const styles = StyleSheet.create({
     padding: 16,
     marginHorizontal: 24,
     marginTop: 100,
-    backgroundColor: "#72063c",
+    backgroundColor: "#4e0329",
     borderRadius: 8,
     elevation: 4,
     shadowColor: "black",
